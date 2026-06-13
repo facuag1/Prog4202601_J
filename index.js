@@ -1,12 +1,12 @@
-const express= require ('express');
+import express from 'express';
 
 const app = express();
+const PORT = 3000;
 
-const port = 3000;
 app.get('/', (req, res) =>{
     res.send('Servidor funcionando correctamente');
 });
 
-app.listen(port, ()=>{
-    console.log(`Servidor escuchando en el puerto ${port}`);
+app.listen(PORT, ()=>{
+    console.log(`Servidor escuchando en el puerto ${PORT}`);
 });
